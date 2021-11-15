@@ -22,6 +22,7 @@ if uploadedfile:
     f=streamlit.sidebar.slider("upper value",0,255)
     lower=(a,b,c)
     upper=(d,e,f)
+    print("hi")
     hsvimage=cv2.cvtColor(image1,cv2.COLOR_RGB2HSV)
     i1=cv2.inRange(hsvimage,lower,upper)
     i2=cv2.erode(i1,None)
